@@ -4,11 +4,12 @@ import os
 
 def procmess(request):
     #this funtion sends a message and returns a response obj
-    mess_dir = '/home/bugtwent/nltk_data/corpora/movie_reviews/neg/cv001_19502.txt'
-    contact_list = ['+254724803882','+254718593676','+254728601096']
+   
+    mess_dir = '/cv001_19502.txt' #corpora
+    contact_list = ['+254724111111',]
 
     user_name = 'sandbox'
-    api_key = os.environ['ATK_KEY']
+    api_key = os.environ['ATK_KEY'] #use python-dotenv
     africastalking.initialize(user_name,api_key)
     sms = africastalking.SMS
     
